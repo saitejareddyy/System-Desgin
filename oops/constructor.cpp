@@ -21,6 +21,13 @@ public:
     }
 };
 
+
+//Destructor
+// It`s an instance member function that is invocked actomatically whenever an object is going to be destroyed
+//It`s a last function that is going to be called before an object is destroyed
+
+
+
 int main(){
     Customer obj1("saiteja", 123456789, 69);
     obj1.get_info();
