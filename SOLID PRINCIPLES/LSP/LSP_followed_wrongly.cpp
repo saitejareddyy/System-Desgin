@@ -118,3 +118,16 @@ int main(){
     delete fixed;
     return 0; 
 }
+
+
+//### If the client includes a Fixed Deposit account and tries to withdraw from it, an error is thrown, which violates the Liskov Substitution Principle (LSP).
+
+//### To handle this situation, we could modify the client code by adding an if-else condition to prevent withdrawals from FixedDepositAccount:
+
+    //1. This may work, but abstraction suggests the client should not need to know what happens inside methods or classes.
+    
+    //2. It is bad practice and leads to tight coupling.
+    
+    //3. In the future, if we add another account type with different restrictions, we would again need to modify the client code.
+    
+    //4. Most importantly, this situation breaks the Open–Closed Principle (OCP).
