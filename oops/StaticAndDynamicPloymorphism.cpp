@@ -31,7 +31,7 @@ public:
 
     virtual void accelerate() = 0;  // Abstract method for Dynamic Polymorphism
 
-    virtual void accelerate(int speed) = 0;  //Abstract method for Static Polymorphism
+    virtual void accelerate(int speed) = 0;  //Abstract method for Dynamic Polymorphism
 
     virtual void brake() = 0;       // Abstract method for Dynamic Polymorphism
     
@@ -139,7 +139,7 @@ int main() {
     Car* myManualCar = new ManualCar("Ford", "Mustang");
     myManualCar->startEngine();
     myManualCar->accelerate();
-    myManualCar->accelerate();
+    myManualCar->accelerate(30); // static polymorphism - method overloading
     myManualCar->brake();
     myManualCar->stopEngine();
 
@@ -149,6 +149,7 @@ int main() {
     myElectricCar->startEngine();
     myElectricCar->accelerate();
     myElectricCar->accelerate();
+    myElectricCar->accelerate(50); // static polymorphism - method overloading
     myElectricCar->brake();
     myElectricCar->stopEngine();
 
