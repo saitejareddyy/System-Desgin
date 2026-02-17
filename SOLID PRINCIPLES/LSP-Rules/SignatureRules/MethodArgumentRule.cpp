@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Method Argument Rule : 
+// Subtype method arguments can be identical or wider than the supertype
+// C++ imposes this by keeping singature identical
+
 class Parent {
 public:
     virtual void print(string msg){
