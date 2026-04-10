@@ -126,7 +126,7 @@ int main(){
     robot1->fly();
     robot1->projection(); 
 
-    cout<< "------------------------------" << endl;
+    cout<< "-------------------------------" << endl;
 
     Robot *robot2 = new WorkerRobot(new Nowalk(), new NoTalk(), new NoFly());
     robot2->walk();
