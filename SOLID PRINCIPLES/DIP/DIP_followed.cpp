@@ -2,6 +2,7 @@
 using namespace std;
 
 class Database {
+public:  
     virtual void save(string data) = 0;
 };
 
